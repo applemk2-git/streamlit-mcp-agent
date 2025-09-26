@@ -1,0 +1,7 @@
+{
+    "aws-documentation-mcp": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": ["awslabs.aws-documentation-mcp-server@latest"]
+    }
+}
