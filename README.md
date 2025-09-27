@@ -49,7 +49,7 @@ uv sync
 
 ### 3. アプリケーションの実行
 ```bash
-uv streamlit run agent.py
+uv run streamlit run agent.py
 ```
 
 アプリケーションが起動したら、ブラウザで `http://localhost:8501` にアクセスしてください。
