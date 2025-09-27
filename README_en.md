@@ -48,7 +48,7 @@ uv sync
 
 ### 3. Run the Application
 ```bash
-uv streamlit run agent.py
+uv run streamlit run agent.py
 ```
 
 Once the application starts, access `http://localhost:8501` in your browser.
