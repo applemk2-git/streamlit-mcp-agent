@@ -9,10 +9,11 @@ import json
 from contextlib import ExitStack
 import asyncio
 
-# 利用するモデルによって変更
+MCP_CONFIG_PATH = "param/mcp.json"
+
+# 利用するモデルによって変更してください。以下はollamaを使う例です。
 from strands.models.ollama import OllamaModel
 
-# gpt-ossを使う場合の例
 DEFAULT_MODEL_HOST = "http://localhost:11434"
 DEFAULT_MODEL_ID = "gpt-oss:20b"
 DEFAULT_SYSTEM_PROMPT = "あなたは優秀なアシスタントです。"
@@ -21,8 +22,6 @@ MODEL = OllamaModel(
     model_id=DEFAULT_MODEL_ID,
     system_prompt=DEFAULT_SYSTEM_PROMPT,
 )
-
-MCP_CONFIG_PATH = "param/mcp.json"
 
 
 async def process_stream_response(agent, prompt, message_placeholder, tool_status):

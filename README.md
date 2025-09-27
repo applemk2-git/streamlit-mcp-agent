@@ -156,6 +156,8 @@ ollama serve
 - `DEFAULT_MODEL_HOST`: モデルサーバーのホストURL
 - `DEFAULT_MODEL_ID`: 使用するモデルID
 - `DEFAULT_SYSTEM_PROMPT`: システムプロンプト
+- `MODEL`: モデル
+
 
 ### モデルオブジェクトの変更
 上記の定数を変更しただけでは不十分です。`create_agent` 関数内のモデルオブジェクトも適切なモデルプロバイダーに変更する必要があります：
